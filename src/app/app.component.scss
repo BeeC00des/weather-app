@@ -13,6 +13,7 @@
     width:40%;
     background:linear-gradient(to right,#7b918c, #475a5c );
     padding: 50px 70px;
+    color:#fff;
 }
 
 .field-width{
@@ -27,8 +28,11 @@
     width:80%; 
     padding:10px 0px;
     list-style: none;
+    position: relative;
     span{
-        text-align: end;
+        position: absolute;
+        right:0;
+        bottom:0;
     }
 }
 
