@@ -1,12 +1,22 @@
 .main{
-    display: flex;
-    margin: 0;
-    padding: 0;
     width:100%;
-    height: auto;
+    height: 100vh;
+    display: flex;
 }
 
-.img-section, .form-section{
-    width:50%;
+.img-section{
+    width:60%;
     border:1px solid red;
 }
+
+.form-section{
+    width:40%;
+    background:linear-gradient(to right,#7b918c, #475a5c );
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
