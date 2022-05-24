@@ -12,11 +12,36 @@
 .form-section{
     width:40%;
     background:linear-gradient(to right,#7b918c, #475a5c );
+    padding: 50px 70px;
 }
 
-:host {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.field-width{
+    width:80%; 
 }
+
+.location-list{
+    height:200px;
+}
+
+.search-result ul li {
+    width:80%; 
+    padding:10px 0px;
+    list-style: none;
+    span{
+        text-align: end;
+    }
+}
+
+.search-result ul{
+    padding-left: 0px;
+}
+
+.mat-input-element{
+    color: white;
+}
+
+.mat-focused .placeholder {
+    color: white !important;
+}
+
   

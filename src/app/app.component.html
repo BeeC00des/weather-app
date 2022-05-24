@@ -3,8 +3,21 @@
     <p>HEllo champ</p>
   </div>
   <div class="form-section">
-    <mat-form-field appearance="fill">
-      <input matInput placeholder="Add location" type="text">
+    <mat-form-field appearance="fill" class="field-width">
+      <input matInput placeholder="Add country location" type="text">
+        <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
+    <div class="location-list">
+
+    </div>
+    <div class="search-result">
+      <h3>Weather Details</h3>
+      <ul>
+        <li>Cloudy <span class="text-end"> 32%</span></li>
+        <li>Humidity <span matSuffix> 32%</span></li>
+        <li>Wind <span matSuffix> 32%</span></li>
+        <li>Rain <span matSuffix> 32%</span></li>
+      </ul>
+    </div>
   </div>
 </div>
