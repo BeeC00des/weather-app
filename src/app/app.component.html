@@ -1,22 +1,25 @@
 <div class="main">
-  <div class="img-section">
-    <img src="../" alt="...">
+  <div class="img-section" (click)="flipImg()">
   </div>
   <div class="form-section">
-    <mat-form-field appearance="fill" class="field-width">
-      <input matInput placeholder="Add country location" type="text" (click)="search()">
+    <mat-form-field appearance="fill" class="field-width" >
+      <input matInput placeholder="Add country location" type="text" >
         <mat-icon matSuffix >search</mat-icon>
     </mat-form-field>
+    <!-- <button >(click)="search()"</button> -->
+    <!-- (keyup)="onSubmit($event)" -->
     <div class="location-list">
 
     </div>
     <div class="search-result">
       <h3 class="">Weather Details</h3>
-      <ul>
-        <li>Cloudy <span> 32%</span></li>
-        <li>Humidity <span> 32'c</span></li>
-        <li>Wind <span > 32%</span></li>
-        <li>Rain <span > 32%</span></li>
+      <!--  -->
+      <ul *ngFor='let item of items | keyvalue'>
+       <li> {{item.key}}<span>{{item.value}}</span></li>
+       <!-- <li>{{item.entries}}</li> -->
+        <!-- <li>Humidity <span>{{item.main.humidity}}</span></li>
+        <li>Wind <span > {{item.wind.speed}}</span></li>
+        <li>Rain <span >{{item.main.pressure}}</span></li> -->
       </ul>
     </div>
   </div>
